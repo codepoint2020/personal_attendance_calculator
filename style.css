@@ -1,0 +1,32 @@
+.purple {
+    background-color: purple !important;
+    border-color: purple !important;
+color: white !important ;
+}
+
+.pink {
+    background-color: #fc6d85 !important;
+    border-color: #fc6d85 !important;
+    color: white !important;
+}
+
+.orange {
+    background-color: orange !important;
+    border-color: orange !important;
+    color: white !important;
+}
+
+.purple:hover {
+    background-color: rgb(143, 19, 143) !important;
+    border-color: rgb(143, 19, 143) !important;
+}
+
+.pink:hover {
+    background-color: #f07f91 !important;
+    border-color: #f07f91 !important;
+}
+
+.orange:hover {
+    background-color: rgb(252, 135, 2) !important;
+    border-color: rgb(252, 135, 2) !important;
+}
