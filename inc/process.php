@@ -14,7 +14,8 @@ if (isset($_POST["btn_update"])) {
     $update_query = $conn->query("UPDATE grade_levels SET no_attendance = $new_attendance WHERE id = $id ; ");
     
     if ($update_query) {
-        echo "Attendance has been updated";
+        $_SESSION['update_id'] = $id; 
+        header("Location: update_confirmation.php");
     }
 }
 
