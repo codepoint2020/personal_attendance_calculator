@@ -34,7 +34,7 @@ include 'inc/header.php';
       <p class="mb-3 h2"><?php echo '1'; ?></p>
 
       <?php ?>
-      <button class="mt-4 btn btn-lg pink btn-block" name="btn_edit">Edit</button>
+      <a class="mt-4 btn btn-lg pink btn-block" href="form_encode.php?grade_id=<?php echo $row['id']; ?>">Edit</a>
       <?php ?>
       <button class="mt-4 btn btn-lg btn-success btn-block" name="btn_update">Update</button>
       <?php ?>

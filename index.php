@@ -40,11 +40,7 @@ include 'inc/header.php';
 </body>
 </html>
 
-<!-- test only -->
-<!-- test only -->
-<!-- test only 2--------------->
 
-<!-- test only 3--------------->
 
 
 
