@@ -8,7 +8,7 @@ include 'inc/header.php';
     <title>UA App</title>
 </head>
 <body class="text-center">
-    <form class="form-signin" action="index.php" method="POST">
+    <form class="form-signin" action="encode.php" method="POST">
         <!-- IF THERE IS ALREADY DATA -->
         <?php
 
@@ -34,11 +34,11 @@ include 'inc/header.php';
       <p class="mb-3 h2"><?php echo '1'; ?></p>
 
       <?php ?>
-      <a class="mt-4 btn btn-lg pink btn-block" href="form_encode.php?grade_id=<?php echo $row['id']; ?>">Edit</a>
+      <a class="mt-4 btn btn-info btn-block" href="form_encode.php?id=<?php echo $row['id']; ?>">Edit</a>
       <?php ?>
-      <button class="mt-4 btn btn-lg btn-success btn-block" name="btn_update">Update</button>
+      
     
-      <button class="mt-3 btn  btn-lg btn-secondary btn-block" name="btn_cancel_edit">CANCEL</button>
+      <a class="mt-3 btn  btn-secondary btn-block" href="index.php">CANCEL</a>
 
       <!-- IF THE VALUE IN ATT_COUNT IS 0 OR BLANK -->
       <?php else: ?>

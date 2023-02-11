@@ -8,14 +8,17 @@ if (isset($_GET["g"])) {
 } 
 
 if (isset($_POST["btn_update"])) {
+    $new_attendance = $_POST["cur_no_attendance"];
     $id = $_POST["id"];
 
-    $update_query = $conn->query("UPDATE grade_levels SET no_attendance = $id; ");
+    $update_query = $conn->query("UPDATE grade_levels SET no_attendance = $new_attendance WHERE id = $id ; ");
     
     if ($update_query) {
         echo "Attendance has been updated";
     }
 }
+
+
 
 
 
