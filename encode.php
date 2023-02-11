@@ -37,7 +37,7 @@ include 'inc/header.php';
       <a class="mt-4 btn btn-lg pink btn-block" href="form_encode.php?grade_id=<?php echo $row['id']; ?>">Edit</a>
       <?php ?>
       <button class="mt-4 btn btn-lg btn-success btn-block" name="btn_update">Update</button>
-      <?php ?>
+    
       <button class="mt-3 btn  btn-lg btn-secondary btn-block" name="btn_cancel_edit">CANCEL</button>
 
       <!-- IF THE VALUE IN ATT_COUNT IS 0 OR BLANK -->
