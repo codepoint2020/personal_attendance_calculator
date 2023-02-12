@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.0.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 10, 2023 at 12:36 PM
+-- Generation Time: Feb 12, 2023 at 06:06 AM
 -- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.10
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,21 +32,22 @@ CREATE TABLE `grade_levels` (
   `grade_id_no` int(11) DEFAULT NULL,
   `grade_name` varchar(100) DEFAULT NULL,
   `gl_id_no` int(11) DEFAULT NULL,
-  `no_attendance` int(11) DEFAULT NULL
+  `no_attendance` int(11) DEFAULT NULL,
+  `no_teachers` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `grade_levels`
 --
 
-INSERT INTO `grade_levels` (`id`, `grade_id_no`, `grade_name`, `gl_id_no`, `no_attendance`) VALUES
-(1, 0, 'kinder', NULL, 4),
-(2, 1, 'grade I', NULL, 4),
-(3, 2, 'grade II', NULL, 3),
-(4, 3, 'grade III', NULL, 5),
-(5, 4, 'grade IV', NULL, 4),
-(6, 5, 'grade V', NULL, 6),
-(7, 6, 'grade VI', NULL, 5);
+INSERT INTO `grade_levels` (`id`, `grade_id_no`, `grade_name`, `gl_id_no`, `no_attendance`, `no_teachers`) VALUES
+(1, 0, 'kinder', NULL, 4, 5),
+(2, 1, 'grade I', NULL, 1, 9),
+(3, 2, 'grade II', NULL, 6, 6),
+(4, 3, 'grade III', NULL, 3, 9),
+(5, 4, 'grade IV', NULL, 9, 9),
+(6, 5, 'grade V', NULL, 8, 8),
+(7, 6, 'grade VI', NULL, 8, 8);
 
 -- --------------------------------------------------------
 
